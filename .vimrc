@@ -64,3 +64,24 @@ filetype plugin on
 filetype indent on
 colorscheme iceberg
 set background=dark
+
+" ===== CommandT configuration =====
+let g:CommandTMaxHeight = 15
+let g:CommandTMatchWindowAtTop = 1
+let g:CommandTCancelMap = ['<ESC>', '<C-c>']
+let g:CommandTSelectNextMap = ['<C-J>']
+let g:CommandTSelectPrevMap = ['<C-k>']
+let g:CommandTWildIgnore=&wildignore . ",vendor/*,node_modules/**,bower_components/**"
+let g:CommandTMatchWindowReverse=0
+
+" ===== Shortcuts =====
+
+" NerdTree
+map <silent> <LocalLeader>nt :NERDTreeToggle<CR>
+map <silent> <LocalLeader>nr :NERDTree<CR>
+map <silent> <LocalLeader>nf :NERDTreeFind<CR>
+
+" CommandT 
+map <silent> <LocalLeader>ff :CommandT<CR>
+map <silent> <LocalLeader>fr :CommandTFlush<CR>
+map <silent> <LocalLeader>fb :CommandTBuffer<CR>
