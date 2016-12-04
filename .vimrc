@@ -15,7 +15,6 @@ set number
 set ruler
 " Wrap lines when they are too long
 set wrap
-
 " Display at least 3 lines around your cursor when scrolling
 set scrolloff=3
 
@@ -40,6 +39,18 @@ set noerrorbells
 
 " Backspace behaves as expected
 set backspace=indent,eol,start
+" Set max text width to unlimited
+set textwidth=0
+" Turn off smart indent to use filetype-based indenting
+set nosmartindent
+" Convert tabs to spaces
+set expandtab
+" Have vim interpret tabs as two spaces
+set tabstop=2
+" Set number of colums for tabs
+set softtabstop=2
+" Move two spaces when using reindent operations
+set shiftwidth=2
 
 " Hide buffer instead of abandoning when switching to another buffer
 set hidden
@@ -51,5 +62,5 @@ syntax enable
 filetype on
 filetype plugin on
 filetype indent on
+colorscheme iceberg
 set background=dark
-colorscheme solarized
