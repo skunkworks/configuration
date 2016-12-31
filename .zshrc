@@ -105,5 +105,7 @@ export GREP_OPTIONS='--color'
 export EDITOR=vim
 export LESS='XFR'
 
+export PATH="/usr/local/bin:$PATH"
+
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
