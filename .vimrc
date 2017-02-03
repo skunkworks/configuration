@@ -55,6 +55,9 @@ set shiftwidth=2
 " Hide buffer instead of abandoning when switching to another buffer
 set hidden
 
+" Do not auto-comment subsequent lines
+set formatoptions-=cro
+
 " -- Color
 " Enable syntax highlighting
 syntax enable
@@ -73,6 +76,14 @@ let g:CommandTSelectNextMap = ['<C-J>']
 let g:CommandTSelectPrevMap = ['<C-k>']
 let g:CommandTWildIgnore=&wildignore . ",vendor/*,node_modules/**,bower_components/**"
 let g:CommandTMatchWindowReverse=0
+
+" ===== NerdCommenter configuration =====
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+" Align line-wise comment delimiters flush left instead of following code indentation
+let g:NERDDefaultAlign = 'left'
+" " Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDCommentEmptyLines = 1
 
 " ===== Shortcuts =====
 
